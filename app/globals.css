@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -23,4 +23,51 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+  display: block !important;
+  display: flex !important;
+}
+.gradient-bg {
+  background: linear-gradient(to bottom, #ffe5e5, #f5fffe, #ffffff, #ffffff);
+}
+/* Custom slick dots */
+
+.slick-dots li.slick-active button {
+  border: 1px solid #ed553b;
+  border-radius: 100%;
+}
+
+.jkl .tag-text {
+  color: #ed553b;
+  font-size: 14px;
+  font-weight: 700;
+}
+.jkl p .line {
+  position: relative;
+}
+.jkl p .line::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ed553b;
+}
+.newrelease-sec .img-sec {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.newrelease-sec .img-sec button {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  top: 70%;
+}
+
+.newrelease-sec .img-sec:hover button {
+  opacity: 1;
+  visibility: visible;
 }
