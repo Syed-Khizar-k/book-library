@@ -2,6 +2,7 @@ import Categories from "./components/Categories";
 import Ebooksecion from "./components/Ebooksecion";
 import FeaturedBook from "./components/FeaturedBook";
 import Footer from "./components/Footer";
+import BottomFooter from "./components/footerComp/BottomFooter";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import NewsLetter from "./components/NewLetter";
@@ -19,7 +20,8 @@ export default function Home() {
       <FeaturedBook />
       <Salesection />
       <NewsLetter />
-      <Footer/>
+      <Footer />
+      <BottomFooter />
     </>
   );
 }
