@@ -33,12 +33,12 @@ const BlogSection = () => {
 
   return (
     <>
-      <section className=" w-full container m-auto py-14">
+      <section className=" w-full container m-auto py-14 ">
         <h1 className="text-center font-bold text-3xl text-[#444444]">
           Read our many blogs
         </h1>
         <div className="w-full flex justify-center items-center py-14">
-          <div className="container flex justify-center gap-10 flex-wrap">
+          <div className="container flex justify-center gap-10 flex-wrap ">
             {blogData.map((item, index) => (
               <BlogCard
                 image={item.image}
