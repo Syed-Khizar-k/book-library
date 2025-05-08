@@ -39,7 +39,7 @@ const NewRelease = () => {
             {newReleaseData.map((e, index) => {
               return (
                 <div className="newbooks-card  px-3" key={index}>
-                  <div className="img-sec h-[400px]  flex justify-center items-center  border-1 border-[#EAE8DF] cursor-pointer relative">
+                  <div className="img-sec h-[400px] flex justify-center items-center  border-1 border-[#EAE8DF] cursor-pointer relative">
                     <Image
                       src={`/${e.img}`}
                       alt="header image"

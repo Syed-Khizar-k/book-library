@@ -28,12 +28,15 @@ const CategCard = () => {
       {CategCardData.map((e) => {
         return (
           <div className="col-span-4  " key={e.id}>
-            <div className="">
+            <div
+              style={{ position: "relative", width: "100%", height: "224px" }}
+              className="rounded-lg">
               <Image
                 src={`/${e.img}`}
                 alt="header image"
-                height={216}
-                width={416}
+                fill
+                style={{ objectFit: "cover" }}
+                className="rounded-lg" // or 'contain' based on your need
               />
             </div>
             <div className="text-center">
