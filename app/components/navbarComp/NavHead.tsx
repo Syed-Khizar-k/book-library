@@ -27,7 +27,7 @@ const NavHead = () => {
               className="text-gray-400 h-[18px] absolute right-0 pr-[40px] hidden md:block"
             />
           </div>
-          <div className="md:w-[35%] w-[65%] text-[#393280] md:flex text-[14px] uppercase hidden ">
+          <div className="md:w-[35%] w-[65%] text-[#393280] md:flex justify-end text-[14px] uppercase hidden ">
             {linksData.map((e, index) => {
               return (
                 <Link
