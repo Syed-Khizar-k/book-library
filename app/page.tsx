@@ -1,3 +1,4 @@
+import BlogSection from "./components/BlogSection";
 import Categories from "./components/Categories";
 import Ebooksecion from "./components/Ebooksecion";
 import FeaturedBook from "./components/FeaturedBook";
@@ -20,6 +21,7 @@ export default function Home() {
       <FeaturedBook />
       <Salesection />
       <NewsLetter />
+      <BlogSection/>
       <Footer />
       <BottomFooter />
     </>
