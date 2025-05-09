@@ -42,7 +42,7 @@ const Salesection = () => {
 
                 <div className="sec-img w-[50%]">
                   <Image
-                    src={`/${e.img}`}
+                    src={e.img}
                     alt="header image"
                     width={488}
                     height={632}
