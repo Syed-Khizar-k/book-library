@@ -24,7 +24,7 @@ const NewReleasesBookCard = ({
         <div className="img-sec flex justify-center items-center  border-1 border-[#EAE8DF] cursor-pointer relative">
           <Link href={`/products/${slug}`}>
             <Image
-              src={`/${image}`}
+              src={`${image}`}
               alt="header image"
               width={318}
               height={219}
