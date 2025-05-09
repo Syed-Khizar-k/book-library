@@ -3,8 +3,14 @@ import React, { useState } from "react";
 import newReleaseData from "./newReleaseComp/newReleaseData";
 import NewReleasesBookCard from "./newReleaseComp/NewReleasesBookCard";
 
-
 const ProductArea = () => {
+  //use state for product cards
+  const [productCards, setProductCards] = useState(newReleaseData);
+  //sorted function A-Z
+  const sortFunc = () => {
+    const sorted = [...productCards].sort((a, b) => a.h1.localeCompare(b.h1));
+    setProductCards(sorted);
+  };
   const [openIndex, setOpenIndex] = useState<number | null>(null); // Store index of opened item
 
   const toggle = (index: number) => {
@@ -190,7 +196,15 @@ const ProductArea = () => {
         <section className="w-[75%] px-14">
           <div className="w-full flex justify-between items-center">
             <div className="flex font-[700] gap-25 text-blue text-[16px] py-6 justify-between items-center">
-              <div>Sort by: Alphabetically, A-Z</div>
+              <div>
+                <span
+                  className="cursor-pointer"
+                  onClick={() => {
+                    sortFunc();
+                  }}>
+                  Sort by: Alphabetically, A-Z
+                </span>
+              </div>
               <div>Showing 1-12 of 26 result</div>
               <div>Show: 12</div>
             </div>
@@ -202,9 +216,8 @@ const ProductArea = () => {
           </div>
 
           <div className="grid grid-cols-12">
-            {newReleaseData.map((item, index) => {
+            {productCards.map((item, index) => {
               return (
-              
                 <NewReleasesBookCard
                   key={index}
                   image={item.img}

@@ -6,13 +6,12 @@ import BottomFooter from "../components/footerComp/BottomFooter";
 import Breadcrumb from "../components/BreadCrumb";
 import ProductArea from "../components/ProductArea";
 
-
 const page = () => {
   return (
     <>
       <Navbar />
       <Breadcrumb />
-      <ProductArea/>
+      <ProductArea />
       <Footer />
       <BottomFooter />
     </>

@@ -21,6 +21,8 @@ const Header = () => {
     img: string;
     h1: string;
     btn: string;
+    slug: string;
+    
   }
   return (
     <section className="w-full flex items-center justify-center">
@@ -39,7 +41,7 @@ const Header = () => {
                 <p className="md:text-[22px] text-[16px] font-[500] text-[#393280CC] my-[20px]">
                   {e.p}
                 </p>
-                <Button text={e.btn}></Button>
+                <Button text={e.btn} slug={e.slug}></Button>
               </div>
               <div className="right-side-header md:w-[50%] ">
                 <Image

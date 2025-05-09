@@ -35,7 +35,7 @@ const FeaturedBook = () => {
             <h3 className="text-[23px] text-[#ED553B] font-[700] py-[10px]">
               $ 45.00
             </h3>
-            <Button text="view more"></Button>
+            <Button text="view more" slug="/"></Button>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const Categories = () => {
           <CategCard></CategCard>
         </div>
         <div className="text-center">
-          <Button text="VIEW MORE"></Button>
+          <Button text="VIEW MORE" slug="/"></Button>
         </div>
       </div>
     </section>
