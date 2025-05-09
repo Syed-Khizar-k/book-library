@@ -82,3 +82,13 @@ body {
   transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   top: 45%;
 }
+.newbooks-card button {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  top: 65%;
+}
+.newbooks-card:hover button {
+  opacity: 1;
+  visibility: visible;
+}

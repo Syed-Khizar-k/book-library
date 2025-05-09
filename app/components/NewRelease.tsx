@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import Slider from "react-slick";
-import newReleaseData from "./newRelease/newReleaseData";
-import Image from "next/image";
+import newReleaseData from "./newReleaseComp/newReleaseData";
+
+import NewReleasesBookCard from "./newReleaseComp/NewReleasesBookCard";
 
 const NewRelease = () => {
   const settings = {
@@ -36,32 +37,17 @@ const NewRelease = () => {
           <Slider
             {...settings}
             className="  border-b-1 border-[#E0E0E0] pb-[40px] flex justify-center">
-            {newReleaseData.map((e, index) => {
+            {newReleaseData.map((item, index) => {
               return (
-                <div className="newbooks-card  px-3" key={index}>
-                  <div className="img-sec h-[400px] flex justify-center items-center  border-1 border-[#EAE8DF] cursor-pointer relative">
-                    <Image
-                      src={`/${e.img}`}
-                      alt="header image"
-                      width={318}
-                      height={219}
-                    />
-                    <button className="w-[90%] absolute cursor-pointer bg-[#ED553B] text-[16px] text-[#FFFFFF] py-[5px] uppercase">
-                      {e.btn}
-                    </button>
-                  </div>
-                  <div className="text-sec text-center ">
-                    <h1 className="text-[22px] font-[600] text-[#393280] py-[5px]">
-                      {e.h1}
-                    </h1>
-                    <p className="text-[14px] text-[#888888]  py-[10px]">
-                      {e.p}
-                    </p>
-                    <span className="text-[18px] font-[700] text-[#ED553B]">
-                      {e.span}
-                    </span>
-                  </div>
-                </div>
+                <NewReleasesBookCard
+                  key={index}
+                  image={item.img}
+                  heading={item.h1}
+                  text={item.p}
+                  button={item.btn}
+                  span={item.span}
+                  slug={item.slug}
+                />
               );
             })}
           </Slider>
