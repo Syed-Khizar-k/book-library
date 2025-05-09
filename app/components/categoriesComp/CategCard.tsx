@@ -32,7 +32,7 @@ const CategCard = () => {
               style={{ position: "relative", width: "100%", height: "224px" }}
               className="rounded-lg">
               <Image
-                src={`/${e.img}`}
+                src={`${e.img}`}
                 alt="header image"
                 fill
                 style={{ objectFit: "cover" }}
