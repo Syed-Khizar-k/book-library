@@ -23,12 +23,7 @@ const NewReleasesBookCard = ({
       <div className="newbooks-card  px-3 col-span-4 relative">
         <div className="img-sec flex justify-center items-center  border-1 border-[#EAE8DF] cursor-pointer relative">
           <Link href={`/products/${slug}`}>
-            <Image
-              src={`${image}`}
-              alt="header image"
-              width={318}
-              height={219}
-            />
+            <Image src={image} alt="header image" width={318} height={219} />
           </Link>
 
           <button className="w-[90%] absolute cursor-pointer bg-[#ED553B] text-[16px] text-[#FFFFFF] py-[5px] uppercase">
